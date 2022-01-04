@@ -1,4 +1,4 @@
-var userFormEl = document.querySelector("#user-form");
+var userFormEl = document.querySelector("#card");
 var cityInputEl = document.querySelector("#city");
 var apiKey = "e346505cc59ffec019500e1a2835c0e4";
 
@@ -13,7 +13,7 @@ var getCurrentWeather = function (apiUrl) {
           getWeatherForecast(data);
         });
       } else {
-        alert('Error: City Weather Not Found');
+        alert("Error: City Weather Not Found");
       }
     })
     .catch(function (error) {
@@ -26,7 +26,13 @@ var getWeatherForecast = function (jsonData) {
   var lon = jsonData.coord.lon;
   var lat = jsonData.coord.lat;
 
-  var dailyForecastUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + /*"&exclude={part}*/ "&units=metric&appid=" + apiKey;
+  var dailyForecastUrl =
+    "https://api.openweathermap.org/data/2.5/onecall?lat=" +
+    lat +
+    "&lon=" +
+    lon +
+    /*"&exclude={part}*/ "&units=metric&appid=" +
+    apiKey;
 
   // make a request to the url
   fetch(dailyForecastUrl)
@@ -35,18 +41,26 @@ var getWeatherForecast = function (jsonData) {
       if (response.ok) {
         response.json().then(function (data) {
           console.log(data);
-          var date = new Date((data.current.dt + data.timezone_offset) * 1000).toDateString();
+          var date = new Date(
+            (data.current.dt + data.timezone_offset) * 1000
+          ).toDateString();
           console.log(date);
           console.log("Temperature: " + Math.round(data.current.temp));
-          console.log("Wind Speed: " + data.current.wind_speed + " metres/second");
+          console.log(
+            "Wind Speed: " + data.current.wind_speed + " metres/second"
+          );
           console.log("Humidity: " + data.current.humidity + "%");
           console.log("UV Index: " + data.current.uvi);
-          console.log("http://openweathermap.org/img/wn/" + data.current.weather[0].icon + "@2x.png");
+          console.log(
+            "http://openweathermap.org/img/wn/" +
+              data.current.weather[0].icon +
+              "@2x.png"
+          );
 
           displayForecastData(data);
         });
       } else {
-        alert('Error: City Weather Not Found');
+        alert("Error: City Weather Not Found");
       }
     })
     .catch(function (error) {
@@ -58,14 +72,22 @@ var getWeatherForecast = function (jsonData) {
 var displayForecastData = function (weatherdata) {
   for (var i = 0; i < 5; i++) {
     console.log(weatherdata);
-    var date = new Date((weatherdata.daily[i].dt + weatherdata.timezone_offset) * 1000).toDateString();
+    var date = new Date(
+      (weatherdata.daily[i].dt + weatherdata.timezone_offset) * 1000
+    ).toDateString();
     console.log(date);
     console.log("Temperature: " + Math.round(weatherdata.daily[i].temp.day));
-    console.log("Wind Speed: " + weatherdata.daily[i].wind_speed + " metres/second");
+    console.log(
+      "Wind Speed: " + weatherdata.daily[i].wind_speed + " metres/second"
+    );
     console.log("Humidity: " + weatherdata.daily[i].humidity + "%");
-    console.log("http://openweathermap.org/img/wn/" + weatherdata.daily[i].weather[0].icon + ".png");
+    console.log(
+      "http://openweathermap.org/img/wn/" +
+        weatherdata.daily[i].weather[0].icon +
+        ".png"
+    );
   }
-}
+};
 
 var formSubmitHandler = function (event) {
   event.preventDefault();
@@ -73,7 +95,11 @@ var formSubmitHandler = function (event) {
   var city = cityInputEl.value.trim();
 
   if (city) {
-    var currentWeatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+    var currentWeatherApiUrl =
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
+      city +
+      "&appid=" +
+      apiKey;
 
     getCurrentWeather(currentWeatherApiUrl);
 

@@ -16,7 +16,7 @@
       <h1 class="header">SunnyDayz n' StormyNightz</h1>
     </header>
 
-    <h2>Get the most up-to-date five day weather forecast for any City around the world.</h2>
+    <h2>Get the most up-to-date weather for any City around the world.</h2>
 
     <!-- Search Textbox and submit button -->
     <section class="card">
@@ -25,7 +25,48 @@
         <input name="city" id="city" type="text" autofocus="true" class="form-input" />
     <button type="submit" class="btn">Search City Weather</button>
     </form>
-</section>
+    </section>
+
+       <!-- City and Weather information display -->
+        <!-- <section class="display-items">
+            <ul>
+                
+          
+            <li id="temp">Temp</li>
+            <li id="wind">Wind</li>
+            <li id="humidity">Humidity</li>
+            <li id="UV">UV index</li>
+        
+        </ul>
+        </section> -->
+        
+        <div class="container-1">
+            <!-- City and Weather information display -->
+            <div id="Forecast"><h2>"City"</h2></div>
+            <!-- 5 Day Forcast -->
+            <div id="five-day"><h2>5-Day Forecast</h2>
+                <div id="repo-container" class="box-1">
+                    <h2>Day 1</h2>
+                      <img src="" alt="">
+                  </div>
+                  <div id="repo-container" class="box-2">
+                    <h3>Day 2</h3>
+                    <img src="" alt="">
+                  </div>
+                  <div id="repo-container" class="box-3">
+                    <h2>Day 3</h2>
+                      <img src="" alt="">
+                  </div>
+                  <div id="repo-container" class="box-4"> 
+                    <h2>Day 4</h2>
+                      <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="partly sunny with rain">
+                  </div>
+                  <div id="repo-container" class="box-5">
+                      <h2>Day 5</h2>
+                      <img src="" alt="">
+                    </div>
+            </div>
+        </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -33,6 +74,7 @@
     </footer>
     </div>
 
-    <!-- Javascript Docs -->
+    <!-- Javascript Doc -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
