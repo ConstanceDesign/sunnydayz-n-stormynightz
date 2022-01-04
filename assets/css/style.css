@@ -64,17 +64,16 @@ body {
   overflow: hidden;
 }
 
-.form-input [type="text"] {
+.card [type="text"] {
   font-family: "Basic", sans-serif;
   font-size: 21px;
   color: #000;
-  display: flex;
-  position: -webkit-sticky;
-  position: sticky;
-  padding: 0px 15px;
+  padding: 0px 25px;
+  margin-left: 50px;
+  margin-bottom: 15px;
   height: 50px;
   width: 300px;
-  border-style: groove;
+  border: 3px solid #000;
   border-radius: 5px;
 }
 
@@ -84,12 +83,12 @@ body {
   z-index: 3;
   color: #000;
   border-radius: 5px;
-  height: 75px;
+  height: 50px;
   background-color: #000;
   font-family: "Basic", sans-serif;
   font-weight: bold;
   font-size: 21px;
-  padding: 25px;
+  padding: 0px 25px;
   margin-left: 8px;
   color: #fff;
   border: none;
