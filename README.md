@@ -38,6 +38,7 @@ HTML,CSS,Bootstrap,Javascript,APIs,Git
 This app is open to contributions. Open up an Issue with suggested improvements and be sure your contact information is available for next steps.
 
 ## Visuals
+<img width="1245" alt="Screen Shot 2022-04-20 at 11 57 45 PM" src="https://user-images.githubusercontent.com/93297081/164369986-f0ed4df4-ad68-450f-9c73-cd7b276a1e1d.png">
 
 ## GitHub Link
 
