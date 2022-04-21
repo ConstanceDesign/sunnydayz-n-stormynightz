@@ -1,0 +1,194 @@
+:root {
+  --primary: #000;
+  --secondary: #9caea9;
+  --tertiary: #788585;
+  --light-dark: #6f6866;
+  --dark: #fff;
+  --border-radius: 0.3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.current {
+  background-color: var(--dark);
+}
+
+.text-light {
+  color: #000;
+}
+
+.n {
+  color: var(--tertiary);
+  font-family: "Basic", sans-serif;
+  font-style: italic;
+  color: cornflowerblue;
+}
+
+.F {
+  color: var(--tertiary);
+  font-family: "Basic", sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.H {
+  margin-top: -10px;
+  color: var(--tertiary);
+  font-family: "Basic", sans-serif;
+  font-size: 1.05em;
+  color: #fff;
+  text-align: center;
+}
+
+.input {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+body {
+  background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+  color: var(--primary);
+  line-height: 1.25;
+  font-family: "Basic", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.hero {
+  padding: 3% 4%;
+  height: 5vh;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.hero p {
+  max-width: 75%;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-family: "Racing Sans One", cursive;
+  background-color: var(--primary);
+  color: var(--dark);
+  margin-top: 1vh;
+  padding: 10px 40px;
+  display: inline-block;
+  border-radius: 100px;
+}
+
+h2 {
+  font-family: "Basic", sans-serif;
+  font-size: 1.75em;
+  font-style: italic;
+  color: cornflowerblue;
+}
+
+.icon-danger {
+  color: rgb(255, 70, 70);
+}
+
+.icon-success {
+  color: rgb(29, 153, 255);
+}
+
+.forecast {
+  font-size: 0.85em;
+  background-color: blue;
+}
+
+.date {
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.img {
+  text-align: center;
+}
+
+.row {
+  text-align: center;
+}
+
+.future-weather {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.search-button {
+  color: cornflowerblue;
+  background-color: blue;
+  text-decoration: none;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  width: 40px;
+}
+
+.search-button:hover {
+  color: #fff;
+  background-color: cornflowerblue;
+  text-decoration: none;
+}
+
+.input {
+  margin-top: 30px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+.current {
+  background-color: cornflowerblue;
+  border-radius: 0px 15px 15px 0px;
+  margin-top: 30px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+li:hover {
+  background-color: cornflowerblue;
+  text-decoration: underline;
+}

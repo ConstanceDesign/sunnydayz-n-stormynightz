@@ -1,60 +1,68 @@
 # sunnydayz-n-stormynightz
 
-Weather Dashboard
+Weather API 
 
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
+## Table of Contents
 
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
+- [Project Status](#status)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Built With](#coding)
+- [Contribution](#contribution)
+- [Testing](#test)
+- [Visuals](#visuals)
+- [GitHub Link](#github)
+- [Deployment Link](#deployment)
+- [Additional information](#date,#author,#email,#thanks)
 
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+## Project Status
 
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+Completed
 
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+## Description
 
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+CMS Tech Blog Site using MVC.
 
-Grading Requirements
-This challenge is graded based on the following criteria:
+## Installation
 
-Technical Acceptance Criteria: 40%
-Satisfies all of the above acceptance criteria plus the following:
+Be sure to have Node.js installed: `npm install`. Install dependencies and dev dependencies as per indicated in `package.json` files.
 
-Uses the OpenWeather API to retrieve weather data
+## Usage
 
-Uses localStorage to store persistent data
+In Visual Code Studio or another coding software of your choice, run this application in Terminal by typing: `npm start`.
 
-Deployment: 32%
-Application deployed at live URL
+## License
 
-Application loads with no errors
+    This project is licensed under the MIT license.
 
-Application GitHub URL submitted
+## Built With
 
-GitHub repository that contains application code
+HTML,Handlebars,CSS,Bootstrap,Javascript,MySQL,Node,APIs,Git
 
-Application Quality: 15%
-Application user experience is intuitive and easy to navigate
+## Contribution
 
-Application user interface style is clean and polished
+This app is open to contributions. Open up an Issue with suggested improvements and be sure your contact information is available for next steps.
 
-Application resembles the mock-up functionality provided in the Challenge instructions
+## Testing
 
-Repository Quality: 13%
-Repository has a unique name
+To run tests, be sure all NPM packages are installed, open Terminal, and run npm start to connect with your local server.
 
-Repository follows best practices for file structure and naming conventions
+## Visuals
 
-Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+## GitHub Link
 
-Repository contains multiple descriptive commit messages
+[GitHub: SnugglesMcGee](https://github.com/SnugglesMcGee)
 
-Repository contains quality README file with description, screenshot, and link to deployed application
+## Deployment Link
+
+[Heroku](https://tech-init-easy.herokuapp.com/)
+
+## Additional Information
+
+- Date: April 20, 2022
+- Author: Constance Mitchell
+- Email: [info@constance.design](mailto:info@constance.design)
+- Acknowledgements: Many thanks always to UofT Coding Bootcamp.
+
